@@ -49,3 +49,9 @@ consul_api目录中准备重写服务注册和发现(consul)
         }
         
         但是还是有点迷糊,就算把这些重写了,go-micro底层还调用到自己实现的这部分吗
+        
+        
+        
+        自己实现的话
+        client.Agent().ServiceRegister(reg)
+        重写有实现这部分代码的函数就可以了理论上
